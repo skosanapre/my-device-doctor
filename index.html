@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Device Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖥️ My Device Doctor</h1>
+    <p>Select a common PC issue to get troubleshooting help:</p>
+
+    <select id="problem-select">
+      <option value="">-- Select a Problem --</option>
+      <option value="slow">Laptop is very slow</option>
+      <option value="auto-repair">Stuck on "Preparing Automatic Repair"</option>
+      <option value="no-boot">Laptop won't boot</option>
+      <option value="wifi">Wi-Fi not connecting</option>
+    </select>
+
+    <div id="solution-box" class="hidden">
+      <h2>🛠 Possible Fixes:</h2>
+      <ul id="solution-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
